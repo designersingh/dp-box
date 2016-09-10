@@ -20,7 +20,7 @@ hwApp.controller('LandingController',
             });
 
             $('.intro-hero-image').css({
-                'background-position':'0% '+ wScroll/10+'%'
+                'background-position':'100% '+ wScroll/10+'%'
             });
 
 

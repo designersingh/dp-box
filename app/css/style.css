@@ -89,7 +89,7 @@ body{
 	overflow: hidden;
 	background: url("../images/galaxy-hero-bg-1.jpg") no-repeat;
 	background-size: cover;
-	background-position-y: 100%;
+	background-position: 100% 0%;
 	background-attachment: fixed;
 }
 
