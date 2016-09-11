@@ -10,6 +10,9 @@ function ($routeProvider, $locationProvider, $httpProvider) {
         .when('/',
             {templateUrl: 'partials/landing.html',
             controller: 'LandingController'})
+        .when('/signup',
+            {templateUrl: 'partials/signup.html',
+            controller: 'LandingController'})
 
         .otherwise('/');
 

@@ -324,12 +324,22 @@
 
 .bg-dark-gray
 {
-    background-color: #ddd !important;
+    background-color: #999999 !important;
 }
 
 .bg-charcoal
 {
     background-color: #666 !important;
+}
+
+.bg-purple
+{
+    background-color: #aa426d !important;
+}
+
+.bg-extreme-dark
+{
+    background-color: #212123 !important;
 }
 
 .bg-gray
@@ -399,7 +409,9 @@
 .btn-white
 {
     background: #ffffff !important;
+    border: 1px solid #ffffff!important;
     color: #717171!important;
+    text-shadow: none;
 }
 
 
@@ -464,6 +476,8 @@
     text-overflow:ellipsis;
     white-space:nowrap
 }
+
+
 
 .text-tiny
 {

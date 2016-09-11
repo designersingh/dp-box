@@ -1,0 +1,63 @@
+<div class="galaxy-bg"></div>
+<div class="bg-overlay-fs"></div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row row-centered mtop50">
+            <div class="col-md-6 col-sm-10 col-xs-12 pleftright0 col-centered bg-white rounded-corners-medium position-relative overflow-hidden">
+                <div class="confirmation" ng-show="signupConfirmed">
+                    <div class="confirmation-message bg-pink text-center">
+                        <h3>Thank you for signing up for the StoryBox.</h3>
+                        <p>You will receive an email confirmation shortly.</p>
+                        <a href="/" class="btn btn-primary btn-white">Let's go home</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 bg-pink pleftright0 ptopbot5">
+                        <h3 class="text-center text-white mtop10">Join our Magical Club</h3>
+                    </div>
+                </div>
+                <form class="row pad10 mtop10 mleftright0" ng-submit="submitSignup()">
+                    <div class="form-group col-sm-6">
+                        <label>First name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label>Last name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label>Email</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <label>Password</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-8">
+                        <label>Address 1</label>
+                        <input type="text" placeholder="Street name" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label>Address 2</label>
+                        <input type="text" placeholder="Apt/Unit #" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label>City</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label>State</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label>Zip code</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-12 text-center">
+                        <button class="btn btn-primary btn-lg btn-blue" type="submit">Sign up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

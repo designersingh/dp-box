@@ -1,85 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600);
 
 body{
-	background: #000000;
+	background: #e1e1e1;
 	font-family: 'Open Sans', sans-serif;
-}
-
-.star-wars-text
-{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: url('../images/star-hero-bg.jpg') no-repeat;
-	background-size: 110%;
-	background-position: center top;
-	background-attachment: fixed;
-	overflow: hidden;
-}
-
-.star-wars-text .intro-hero-logo
-{
-	width: 1350px;
-	height: 1350px;
-	position: absolute;
-	top:-30%;
-	bottom:0;
-	left:0;
-	right:0;
-	margin: auto;
-	background: url(../images/star-wars-logo.svg) no-repeat;
-	background-size: contain;
-	background-position: center;
-	opacity: 0;
-}
-
-.star-wars-title
-{
-	position: absolute;
-	height: 450px;
-	bottom: 0;
-	width: 100%;
-	margin:0;
-}
-
-
-#titles
-{
-	width: 100%;
-	height: 682px;
-	margin-top: -28%;
-	font-size: 350%;
-	font-weight: bold;
-	text-align: justify;
-	overflow: hidden;
-	transform-origin: 50% 100%;
-	transform: perspective(661px) rotateX(46deg);
-	color: #ffff66;
-}
-
-#titles:after
-{
-	position: absolute;
-	content: ' ';
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 60%;
-	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-	pointer-events: none;
-}
-
-
-#titlecontent
-{
-	position: absolute;
-	top: 100%;
-	animation: scroll 35s linear 0.5s;
-}
-
-@keyframes scroll {
-	0% { top: 100%; }
-	100% { top: -170%; }
 }
 
 .intro-hero-image
@@ -89,8 +12,17 @@ body{
 	overflow: hidden;
 	background: url("../images/galaxy-hero-bg-1.jpg") no-repeat;
 	background-size: cover;
-	background-position: 100% 0%;
 	background-attachment: fixed;
+}
+
+.galaxy-bg
+{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: url("../images/dp-hero-bg.jpg") no-repeat;
+	background-size: cover;
 }
 
 .bg-overlay
@@ -102,6 +34,17 @@ body{
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0,.5);
+}
+
+.bg-overlay-fs
+{
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,.65);
 }
 
 .pitch, .box-contents
@@ -194,7 +137,30 @@ body{
 	vertical-align: middle;
 }
 
+.confirmation
+{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: rgba(255,255,255,.9);
+}
 
+.confirmation-message
+{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin: auto;
+	width: 100%;
+	height: 150px;
+	background: #f7f7f7;
+	color: #ffffff;
+	box-shadow: 0px 0px 5px 1px rgba(120,120,120,.3);
+}
 
 
 

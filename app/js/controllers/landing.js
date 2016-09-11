@@ -4,7 +4,7 @@ hwApp.controller('LandingController',
     ['$routeParams','$scope','$rootScope','$http','$location','ngDialog',
     function($routeParams,$scope,$rootScope,$http,$location,ngDialog){
 
-    $scope.welcome = "Welcome to Landing Page.";
+    $scope.signupConfirmed = false;
 
     $scope.initLanding = function(){
 
@@ -22,9 +22,11 @@ hwApp.controller('LandingController',
             $('.intro-hero-image').css({
                 'background-position':'100% '+ wScroll/10+'%'
             });
-
-
         });
+    }
+
+    $scope.submitSignup = function(){
+        $scope.signupConfirmed = true;
     }
 
 }]);
