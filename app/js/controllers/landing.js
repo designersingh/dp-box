@@ -7,9 +7,10 @@ hwApp.controller('LandingController',
     $scope.signupConfirmed = false;
 
     $scope.initLanding = function(){
-
         $(window).scroll(function(){
+            $('.intro-all-princesses, .intro-hero-logo').removeClass('animated');
             var wScroll = $(this).scrollTop();
+            console.log(wScroll);
 
             $('.intro-all-princesses').css({
                 'transform':'translate(0px,'+ wScroll/3+'%)'
